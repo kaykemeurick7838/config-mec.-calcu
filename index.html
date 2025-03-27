@@ -1,0 +1,558 @@
+<!DOCTYPE html
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <meta name="description" content="CALCULADORA MECÂNICA - COMANDO RJ">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="CALCULADORA COMANDO RJ -  BY RYOIKI / ALWAY">
+        <meta property="og:description" content="A Calculadora da Mecanica.">
+        <meta property="og:image" content="https://calculadoramec.netlify.app/img/mecanicasite.png"/>
+        <meta property="og:image:alt" content="CALCULADORA MEC - By RYOIKI / ALWAY">
+        <title>CALCULADORA COMANDO RJ</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="codigo.js" defer></script>
+        
+    </head>
+
+    <body>
+
+        <div class="main-container">
+        <div class="left-box">
+        <div class="container">
+            <h4 class="header">MOTOR
+                <button type="button" class="button" onclick="limpaMotor()"><img src="image/buttonreturn.png" alt="Return Button"></button>
+            </h4>
+            <script> function limpaMotor() { console.log("Função limpaMotor acionada."); } </script>
+            <form>
+                <label class="radio-label">
+                    <input class="radio" id="motor1" value="motor1" onchange="main()" type="radio" name="motor"> <span class="radio-text">NÍVEL 1</span>
+                </label>
+                <label class="radio-label">
+                    <input class="radio" id="motor2" value="motor2" onchange="main()" type="radio" name="motor"> <span class="radio-text">NÍVEL 2</span>
+                </label>
+                <label class="radio-label">
+                    <input class="radio" id="motor3" value="motor3" onchange="main()" type="radio" name="motor"> <span class="radio-text">NÍVEL 3</span>
+                </label>
+                <label class="radio-label">
+                    <input class="radio" id="motor4" value="motor4" onchange="main()" type="radio" name="motor"> <span class="radio-text">NÍVEL 4</span>
+                </label>
+                <label class="radio-label">
+                    <input class="radio" id="motor5" value="motor5" onchange="main()" type="radio" name="motor"> <span class="radio-text">NÍVEL 5</span>
+                </label>
+            </form>
+        </div>
+
+        <div class="container">
+            <h4 class="header">FREIOS
+                <button type="button" class="button" onclick="limpaFreio()"><img src="image/buttonreturn.png" alt="Return Button"></button>
+            </h4>
+            <script> function limpaFreio() { console.log("Função limpaFreio acionada."); } </script>
+            <form>
+                <label class="radio-label">
+                    <input class="radio" id="freio1" value="freio1" onchange="main()" type="radio" name="freio"> <span class="radio-text">NÍVEL 1</span>
+                </label>
+                <label class="radio-label">
+                    <input class="radio" id="freio2" value="freio2" onchange="main()" type="radio" name="freio"> <span class="radio-text">NÍVEL 2</span>
+                </label>
+                <label class="radio-label">
+                    <input class="radio" id="freio3" value="freio3" onchange="main()" type="radio" name="freio"> <span class="radio-text">NÍVEL 3</span>
+                </label>
+                <label class="radio-label">
+                    <input class="radio" id="freio4" value="freio4" onchange="main()" type="radio" name="freio"> <span class="radio-text">NÍVEL 4</span>
+                </label>
+            </form>
+        </div>
+
+        <div class="container">
+            <h4 class="header">TRANSMISSÃO
+                <button type="button" class="button" onclick="limpaTrans()"><img src="image/buttonreturn.png" alt="Return Button"></button>
+            </h4>
+            <script> function limpaTrans() { console.log("Função limpaTrans acionada."); } </script>
+            <form>
+                <label class="radio-label">
+                    <input class="radio" id="trans1" value="trans1" onchange="main()" type="radio" name="trans"> <span class="radio-text">NÍVEL 1</span>
+                </label>
+                <label class="radio-label">
+                    <input class="radio" id="trans2" value="trans2" onchange="main()" type="radio" name="trans"> <span class="radio-text">NÍVEL 2</span>
+                </label>
+                <label class="radio-label">
+                    <input class="radio" id="trans3" value="trans3" onchange="main()" type="radio" name="trans"> <span class="radio-text">NÍVEL 3</span>
+                </label>
+                <label class="radio-label">
+                    <input class="radio" id="trans4" value="trans4" onchange="main()" type="radio" name="trans"> <span class="radio-text">NÍVEL 4</span>
+                </label>
+            </form>
+        </div>
+
+        <div class="container">
+            <h4 class="header">SUSPENSÃO
+                <button type="button" class="button" onclick="limpaSus()"><img src="image/buttonreturn.png" alt="Return Button"></button>
+            </h4>
+            <script> function limpaSus() { console.log("Função limpaSus acionada."); } </script>
+            <form>
+                <label class="radio-label">
+                    <input class="radio" id="sus1" value="sus1" onchange="main()" type="radio" name="sus"> <span class="radio-text">NÍVEL 1</span>
+                </label>
+                <label class="radio-label">
+                    <input class="radio" id="sus2" value="sus2" onchange="main()" type="radio" name="sus"> <span class="radio-text">NÍVEL 2</span>
+                </label>
+                <label class="radio-label">
+                    <input class="radio" id="sus3" value="sus3" onchange="main()" type="radio" name="sus"> <span class="radio-text">NÍVEL 3</span>
+                </label>
+                <label class="radio-label">
+                    <input class="radio" id="sus4" value="sus4" onchange="main()" type="radio" name="sus"> <span class="radio-text">NÍVEL 4</span>
+                </label>
+                <label class="radio-label">
+                    <input class="radio" id="sus5" value="sus5" onchange="main()" type="radio" name="sus"> <span class="radio-text">NÍVEL 5</span>
+                </label>
+            </form>
+        </div>
+
+        <div class="container">
+            <h4 class="header">OUTROS
+                <button type="button" class="button" onclick="limpaOutros()"><img src="image/buttonreturn.png" alt="Return Button"></button>
+            </h4>
+            <script> 
+                function limpaOutros() { 
+                    console.log("Função limpaOutros acionada."); 
+                } 
+            </script>
+            <form>
+                <label class="checkbox-label">
+                    <input class="radio" id="outros1" value="outros1" onchange="main()" type="checkbox" name="outros"> 
+                    <span class="checkbox-text">GARRAFA NITRO <img src="image/turbo.png" alt="Turbo Icon" class="icon"></span>
+                </label>
+                <label class="checkbox-label">
+                    <input class="checkbox" id="outros2" value="outros2" onchange="main()" type="checkbox" name="outros"> 
+                    <span class="checkbox-text" style="font-weight: 800">KIT-NITRO <img src="image/turbo.png" alt="Nitro Icon" class="icon"></span>
+                </label>
+                <label class="checkbox-label">
+                    <input class="checkbox" id="outros3" value="outros4" onchange="main()" type="checkbox" name="outros"> 
+                    <span class="checkbox-text" style="font-weight: 800">FULL TUNING <img src="image/turbo.png" alt="Full Tuning Icon" class="icon"></span>
+                </label>
+            </form>
+        </div>
+        
+        
+
+        <div class="container">
+            <h4 class="header">NEON / XENON
+                <button type="button" class="button" onclick="limpaNeon()"><img src="image/buttonreturn.png" alt="Return Button"></button>
+            </h4>
+            <script> function limpaNeon() { console.log("Função limpaNeon acionada."); } </script>
+            <form>
+                <label class="checkbox-label">
+                    <input class="checkbox" id="neon1" value="neon1" onchange="main()" type="checkbox" name="neon"> <span  class="checkbox-text">NEON (INSTALAÇÃO)</span>
+                </label>
+                <label class="checkbox-label">
+                    <input class="checkbox" id="neon2" value="neon2" onchange="main()" type="checkbox" name="neon"> <span  class="checkbox-text">XENON (INSTALAÇÃO)</span>
+                </label>
+                <label class="checkbox-label">
+                    <input class="checkbox" id="neon3" value="neon3" onchange="main()" type="checkbox" name="neon"> <span  class="checkbox-text">NEON (COR)</span>
+                </label>
+                <label class="checkbox-label">
+                    <input class="checkbox" id="neon4" value="neon4" onchange="main()" type="checkbox" name="neon"> <span  class="checkbox-text">XENON (COR)</span>
+                </label>
+            </form>
+        </div>
+
+        <div class="container">
+            <h4 class="header">BLINDAGEM
+                <button type="button" class="button" onclick="limpaBlind()"><img src="image/buttonreturn.png" alt="Return Button"></button>
+            </h4>
+            <script> function limpaBlind() { console.log("Função limpaBlind acionada."); } </script>
+            <form>
+                <label class="checkbox-label">
+                    <input class="checkbox" id="blind1" value="blind1" onchange="main()" type="checkbox" name="blind"> <span class="checkbox-text">PNEUS</span>
+                </label>
+                <label class="checkbox-label">
+                    <input class="checkbox" id="blind2" value="blind2" onchange="main()" type="checkbox" name="blind"> <span class="checkbox-text">LATARIA</span>
+                </label>
+                <label class="checkbox-label">
+                    <input class="checkbox" id="blind2" value="blind2" onchange="main()" type="checkbox" name="blind"> <span class="checkbox-text">FULL BLINDAGEM</span>
+                </label>
+            </form>
+        </div>
+
+        <div class="container">
+            <h4 class="header">REPARO
+                <button type="button" class="button" onclick="limpaReparo()"><img src="image/buttonreturn.png" alt="Return Button"></button>
+            </h4>
+            <script> function limpaReparo() { console.log("Função limpaReparo acionada."); } </script>
+            <form>
+                <label class="radio-label">
+                    <input class="radio" id="reparo1" value="reparo1" onchange="main()" type="radio" name="reparo"> <span class="radio-text">NA MECÂNICA</span>
+                </label>
+                <label class="radio-label">
+                    <input class="radio" id="reparo2" value="reparo2" onchange="main()" type="radio" name="reparo"> <span class="radio-text">ATÉ 6KM</span>
+                </label>
+                <label class="radio-label">
+                    <input class="radio" id="reparo3" value="reparo3" onchange="main()" type="radio" name="reparo"> <span class="radio-text">ACIMA DE 6KM</span>
+                </label>
+            </form>
+        </div>
+
+        <div class="container">
+            <h4 class="header">HELICÓPTERO
+                <button type="button" class="button" onclick="limpaHeli()"><img src="image/buttonreturn.png" alt="Return Button"></button>
+            </h4>
+            <script> function limpaHeli() { console.log("Função limpaHeli acionada."); } </script>
+            <form>
+                <label class="checkbox-label">
+                    <input class="checkbox" id="heli1" value="heli1" onchange="main()" type="checkbox" name="heli"> <span class="checkbox-text">COR PRIMÁRIA</span>
+                </label>
+                <label class="checkbox-label">
+                    <input class="checkbox" id="heli2" value="heli2" onchange="main()" type="checkbox" name="heli"> <span class="checkbox-text">COR SECUNDÁRIA</span>
+                </label>
+                <label class="checkbox-label">
+                    <input class="checkbox" id="heli3" value="heli3" onchange="main()" type="checkbox" name="heli"> <span class="checkbox-text">PEROLADO</span>
+                </label>
+                <label class="checkbox-label">
+                    <input class="checkbox" id="heli4" value="heli4" onchange="main()" type="checkbox" name="heli"> <span class="checkbox-text">VIDROS</span>
+                </label>
+                <label class="checkbox-label">
+                    <input class="checkbox" id="heli5" value="heli5" onchange="main()" type="checkbox" name="heli"> <span class="checkbox-text">RODAS</span>
+                </label>
+            </form>
+        </div>
+    </div>
+
+        <div class="center-box">
+        <div class="container1">
+            <h4 class="header1">CUSTOMIZAÇÃO
+                <button type="button" class="button" onclick="limpaCustom()"><img src="image/buttonreturn.png" alt="Return Button"></button>
+            </h4>
+            <script> function limpaCustom() { console.log("Função limpaCustom acionada."); } </script>
+            <form style="padding-top: 5px; padding-bottom: 15px" >
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom01" value="custom01" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">AEROFÓLIO</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom02" value="custom02" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">PARACHOQUE DIANTEIRO</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom03" value="custom03" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">PARACHOQUE TRASEIRO</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom04" value="custom04" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">SAIAS</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom05" value="custom05" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">ESCAPAMENTO</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom06" value="custom06" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">CAPA DE FAROL</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom07" value="custom07" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">PORTAS</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom08" value="custom08" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">GAIOLA</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom09" value="custom09" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">GRELHA</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom10" value="custom10" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">CAPÔ</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom11" value="custom11" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">PARALAMA</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom12" value="custom12" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">TETO</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom13" value="custom13" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">BUZINA</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom14" value="custom14" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">ENFEITES</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom15" value="custom15" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">PAINEL</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom16" value="custom16" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">PONTEIROS</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom17" value="custom17" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">JANELAS</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom18" value="custom18" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">BANCOS</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom19" value="custom19" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">DECAL</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom20" value="custom20" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">RODAS</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom21" value="custom21" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">COR RODAS</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom22" value="custom22" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">CUSTOM RODAS</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom23" value="custom23" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">FUMAÇA RODAS</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom24" value="custom24" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">PLACA</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom25" value="custom25" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">PINTURA PRIMÁRIA</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom26" value="custom26" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">PINTURA SECUNDÁRIA</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="custom27" value="custom27" onchange="main()" type="checkbox" name="custom"> <span class="checkbox-text">VIDROS</span>
+                </label>
+            </form>
+        </div>
+
+
+        <div class="container1">
+            <h4 class="header1">REMAP
+                <button type="button" class="button" onclick="limpaRemap()"><img src="image/buttonreturn.png" alt="Return Button"></button>
+            </h4>
+            <script> function limpaRemap() { console.log("Função limpaRemap acionada."); } </script>
+            <form style="padding-top: 5px; padding-bottom: 15px" >
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="remap01" value="remap01" onchange="main()" type="checkbox" name="remap"> <span class="checkbox-text">SUSPENSÃO</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="remap02" value="remap02" onchange="main()" type="checkbox" name="remap"> <span class="checkbox-text">XENON</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="remap03" value="remap03" onchange="main()" type="checkbox" name="remap"> <span class="checkbox-text">NEON</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="remap04" value="remap04" onchange="main()" type="checkbox" name="remap"> <span class="checkbox-text">CAMBER</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="remap05" value="remap05" onchange="main()" type="checkbox" name="remap"> <span class="checkbox-text">OFFSET</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="remap06" value="remap06" onchange="main()" type="checkbox" name="remap"> <span class="checkbox-text">POP'S BANG'S</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="remap07" value="remap07" onchange="main()" type="checkbox" name="remap"> <span class="checkbox-text">WEST GATE</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="remap08" value="remap08" onchange="main()" type="checkbox" name="remap"> <span class="checkbox-text">PURGADOR</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="remap09" value="remap09" onchange="main()" type="checkbox" name="remap"> <span class="checkbox-text">TORQUE</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="remap10" value="remap10" onchange="main()" type="checkbox" name="remap"> <span class="checkbox-text">ACELERAÇÃO DE MOTOR</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="remap11" value="remap11" onchange="main()" type="checkbox" name="remap"> <span class="checkbox-text">ÂNGULO</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="remap12" value="remap12" onchange="main()" type="checkbox" name="remap"> <span class="checkbox-text">FORÇA DE FRENAGEM</span>
+                </label>
+                <br>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="remap13" value="remap13" onchange="main()" type="checkbox" name="remap"> <span class="checkbox-text">ADERÊNCIA EM CURVAS</span>
+                </label>
+                <label class="checkbox1-label">
+                    <input class="checkbox1" id="remap14" value="remap14" onchange="main()" type="checkbox" name="remap"> 
+                    <span class="checkbox-text" style="font-weight: 800">FULL REMAP <img src="image/fulltuning.png"Remap Icon" class="icon"></span>
+                </label>
+            </form>
+            <br><h12 class="atualizacaomec">DATA DA ÚLTIMA ATUALIZAÇÃO: 03/11/2024</h12></br>
+        </div>
+    </div> 
+    </div>
+
+        <div class="right-box">
+        <div class="card">
+            <div class="card0">
+                <div class="input-group"><span class="input-group-addon">NOME:</span>
+                <input id="nome" type="text" class="form-control" autocomplete="off" min="0" maxlength="30" on onkeyup="main()" onchange="main()" name="msg" placeholder="">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">ID DO CLIENTE:</span>
+                <input id="id" type="text" class="form-control" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 8)" maxlength="8" name="msg" placeholder="">
+            </div>
+            <div class="input-group"><span class="input-group-addon">PLACA:</span>
+                <input id="placa" type="text" class="form-control" autocomplete="off" min="0" maxlength="15" on onkeyup="main()" onchange="main()" name="msg" placeholder="">
+            </div>
+
+
+            <div class="input-group">
+                <span class="input-group-addon">DESCONTO %:</span>
+                <input id="desconto" type="text" class="form-control" oninput="validarDesconto(this)" maxlength="3" name="msg" placeholder="0%">
+            </div>  
+            
+            <div class="input-group"><span class="input-group-addon">VALOR:</span>
+                <input id="total" type="text" readonly class="form-control" disabled name="msg" placeholder="0">
+            </div>
+
+                <button id="add" type="button" class="btn" onclick="openModal()" style="margin-top: 15px;">SERVIÇO EXTRA</button>
+                <button id="copiarServico" type="button" class="btn" onclick="registrarServico()" style="display: none;">REGISTRAR SERVIÇO</button>
+                <button id="copiarServico" type="button" class="btn" onclick="copiarServico()">COPIAR SERVIÇO</button>
+                <button id="botaoLimpar" type="button" class="btn" onclick="limpaTudo()">LIMPAR</button>
+            </div>
+            
+            <div class="card1">
+                <h3>FICHA DE SERVIÇO</h3>
+                <p><strong>NOME:</strong> <span id="Card-nome"></span></p>
+                <p><strong>ID:</strong> <span id="Card-id"></span></p>
+                <p><strong>PLACA:</strong> <span id="Card-placa"></span></p>
+                <p><strong>MOTOR:</strong> <span id="Card-motor"></span></p>
+                <p><strong>FREIOS:</strong> <span id="Card-freio"></span></p>
+                <p><strong>TRANSMISSÃO:</strong> <span id="Card-trans"></span></p>
+                <p><strong>SUSPENSÃO:</strong> <span id="Card-sus"></span></p>
+                <p><strong>OUTROS:</strong> <span id="Card-outros"></span></p>
+                <p><strong>NEON/XENON:</strong> <span id="Card-neon"></span></p>
+                <p><strong>BLINDAGEM:</strong> <span id="Card-blind"></span></p>
+                <p><strong>REPARO:</strong> <span id="Card-reparo"></span></p>
+                <p><strong>HELICÓPTERO:</strong> <span id="Card-heli"></span></p>
+                <p><strong>CUSTOMIZAÇÃO:</strong> <span id="Card-custom"></span></p>
+                <p><strong>REMAP:</strong> <span id="Card-remap"></span></p>
+                <p><strong>SERVIÇOS EXTRAS:</strong> <span id="Card-extra"></span></p>
+                <p><strong>DESCONTO:</strong> <span id="Card-desconto"></span></p>
+                <p><strong>VALOR:</strong> <span id="Card-total"></span></p>
+            </div>
+        </div>
+    
+
+        <div class="cardhome">
+            <img src="image/Banner Comando RJ.gif" alt="CALCULADORA COMANDO RJ ">
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="modal" class="modal-custom" onclick="closeModal(event)">
+        <div id="modalContent" class="modal-content-custom">
+            <span class="close-custom" onclick="closeModal(event)">&times;</span>
+            <form id="modal-form" onsubmit="handleSubmit(event)">
+                <div class="input-group-custom">
+                    <label for="extra-services">SERVIÇO:</label>
+                    <input type="text" id="extra-services" name="extra-services" class="form-control" oninput="formatUpperCase(this)">
+                </div>
+                <div class="input-group-custom">
+                    <label for="extra-value">VALOR:</label>
+                    <input type="text" id="extra-value" name="extra-value" class="form-control" inputmode="numeric" oninput="formatBRL(this)">
+                </div>
+                <div class="button-modal">
+                    <button class="btn-modal" type="submit" id="AddService">ADICIONAR SERVIÇO</button>
+                    <button class="btn-modal" type="button" id="cleanService" onclick="limparService()">LIMPAR SERVIÇO</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="alert">
+        ⬇️ ROLE PARA BAIXO (X)
+    </div>
+    
+    <script>
+        // Função para esconder o modal ao clicar nele
+        function hideModal(event) {
+            var modal = document.getElementById('alert');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                // Rola para o final da main-container de maneira suave
+                var mainContainer = document.querySelector('.main-container');
+                if (mainContainer) {
+                    mainContainer.scrollTo({
+                        top: mainContainer.scrollHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        }
+    
+        // Mostrar o modal ao carregar a página
+        window.onload = function() {
+            var modal = document.getElementById('alert');
+            modal.style.display = 'block';
+        };
+    
+        // Adicionar o evento de clique para esconder o modal
+        document.addEventListener('click', hideModal);
+    </script>
+
+
+
+    <div id="home" class="homecalculadora">
+        <div class="homemodal" id="modalContainer">
+            <video id="myVideo" autoplay playsinline preload="auto" muted>
+                <source src="image/homescreen.mp4" type="video/mp4">
+                Seu navegador não suporta o formato de vídeo.
+            </video>
+            <div class="modalcarregamento">
+                <img src="image/carregamento.gif" alt="GIF" class="gif">
+            </div>
+            <div id="errorMessage" style="display: none;">
+                Ocorreu um problema ao carregar o vídeo. Por favor, tente novamente ou use outro navegador.
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const modalContainer = document.getElementById('modalContainer');
+        const myVideo = document.getElementById('myVideo');
+        const errorMessage = document.getElementById('errorMessage');
+
+        function showModal() {
+            modalContainer.style.display = 'flex';
+            myVideo.currentTime = 0; // Reinicia o vídeo
+            myVideo.muted = true; // Configura como mudo inicialmente
+            myVideo.style.display = 'block'; // Exibe o vídeo
+            myVideo.play(); // Garante que o vídeo inicie a reprodução
+        }
+
+        // Exibir o modal quando a página carregar
+        showModal();
+
+        // Fechar o modal ao clicar na tela
+        modalContainer.addEventListener('click', function (event) {
+            if (event.target === modalContainer) {
+                modalContainer.style.display = 'none';
+                myVideo.pause(); // Pausa o vídeo
+                myVideo.currentTime = 0; // Reinicia o vídeo
+                myVideo.muted = true; // Configura como mudo novamente
+            }
+        });
+
+        // Exibir o vídeo com som ao clicar em qualquer lugar dentro do modal
+        modalContainer.addEventListener('click', function () {
+            if (myVideo.muted) {
+                myVideo.muted = false; // Desativa o mudo
+            }
+        });
+
+        // Fechar o modal ao terminar o vídeo
+        myVideo.addEventListener('ended', function () {
+            modalContainer.style.display = 'none';
+            myVideo.currentTime = 0; // Reinicia o vídeo
+            myVideo.muted = true; // Configura como mudo novamente
+        });
+
+        // Exibir mensagem de erro se o vídeo falhar ao carregar
+        myVideo.addEventListener('error', function () {
+            modalContainer.style.display = 'none';
+            errorMessage.style.display = 'block';
+        });
+    });
+    </script>
+
+
+    <script src="js/codigo.js"></script>
+    </body>
+
+    </html>
